@@ -1,0 +1,25 @@
+package com.sachin.service;
+
+public class FareCalcurator {
+    public double calculateFare(double distance, String cabType) {
+        double baseFare = 50.0; //
+        double ratePerKm = 10.0; // km/hours
+
+        if (cabType.equals("SUV")) {
+            ratePerKm = 15.0; // SUV
+        }
+
+        return baseFare + (distance * ratePerKm);
+    }
+} public double calculateFare(double distance, String cabType) {
+    double baseFare = 50.0; // baseFare
+    double ratePerKm = 10.0; // ratePreKm
+
+    if (cabType.equals("SUV")) {
+        ratePerKm = 15.0; // SUV ratePerKm
+    }
+
+    return baseFare + (distance * ratePerKm);
+}
+       }
+}
